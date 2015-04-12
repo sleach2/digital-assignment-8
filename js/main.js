@@ -31,6 +31,9 @@ window.onload = function() {
         cursors = game.input.keyboard.createCursorKeys();
         game.camera.follow(player);
 
+        walls = game.add.group();
+        walls.enableBody = true;
+
         var ledge = walls.create(0, 0, 'ground');
         ledge.body.immovable = true;
         ledge.scale.setTo(20, 2); 
