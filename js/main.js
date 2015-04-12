@@ -34,24 +34,26 @@ window.onload = function() {
         walls = game.add.group();
         walls.enableBody = true;
 
-        var ledge = walls.create(0, 0, 'wall');
-        ledge.body.immovable = true;
-        ledge.scale.setTo(3, 1); 
-        ledge = walls.create(0, 970, 'wall');
-        ledge.body.immovable = true;
-        ledge.scale.setTo(3, 1);
-        ledge = walls.create(0, 0, 'wall');
-        ledge.body.immovable = true;
-        ledge.scale.setTo(0.07, 100);
-        ledge = walls.create(970, 0, 'wall');
-        ledge.body.immovable = true;
-        ledge.scale.setTo(0.07, 100);
-        /*ledge = walls.create(50, 50, 'wall');
-        ledge.body.immovable = true;
-        ledge = walls.create(-130, 250, 'wall');
-        ledge.body.immovable = true;
-        ledge = walls.create(700, 50, 'wall');
-        ledge.body.immovable = true;*/
+        var wall = walls.create(0, 0, 'wall');
+        wall.body.immovable = true;
+        wall.scale.setTo(3, 1); 
+
+        wall = walls.create(0, 970, 'wall');
+        wall.body.immovable = true;
+        wall.scale.setTo(3, 1);
+
+        wall = walls.create(0, 0, 'wall');
+        wall.body.immovable = true;
+        wall.scale.setTo(0.07, 100);
+
+        wall = walls.create(970, 0, 'wall');
+        wall.body.immovable = true;
+        wall.scale.setTo(0.07, 100);
+
+        wall = walls.create(0, 100, 'wall');
+        wall.body.immovable = true;
+        wall.scale.setTo(1, 1);
+
 
     }
     
