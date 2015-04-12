@@ -34,16 +34,16 @@ window.onload = function() {
         walls = game.add.group();
         walls.enableBody = true;
 
-        var ledge = walls.create(0, 0, 'ground');
+        var ledge = walls.create(0, 0, 'wall');
         ledge.body.immovable = true;
-        ledge.scale.setTo(20, 2); 
-        ledge = walls.create(100, 150, 'ground');
+        ledge.scale.setTo(5, 2); 
+        ledge = walls.create(100, 150, 'wall');
         ledge.body.immovable = true;
-        ledge = walls.create(50, 50, 'ground');
+        ledge = walls.create(50, 50, 'wall');
         ledge.body.immovable = true;
-        ledge = walls.create(-130, 250, 'ground');
+        ledge = walls.create(-130, 250, 'wall');
         ledge.body.immovable = true;
-        ledge = walls.create(700, 50, 'ground');
+        ledge = walls.create(700, 50, 'wall');
         ledge.body.immovable = true;
 
     }
