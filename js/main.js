@@ -36,13 +36,13 @@ window.onload = function() {
 
         var ledge = walls.create(0, 0, 'wall');
         ledge.body.immovable = true;
-        ledge.scale.setTo(3, 0.5); 
+        ledge.scale.setTo(3, 1); 
         ledge = walls.create(0, 970, 'wall');
         ledge.body.immovable = true;
-        ledge.scale.setTo(3, 0.5);
+        ledge.scale.setTo(3, 1);
         ledge = walls.create(0, 0, 'wall');
         ledge.body.immovable = true;
-        ledge.scale.setTo(0.05, 100);
+        ledge.scale.setTo(0.06, 100);
         /*ledge = walls.create(50, 50, 'wall');
         ledge.body.immovable = true;
         ledge = walls.create(-130, 250, 'wall');
