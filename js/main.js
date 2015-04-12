@@ -42,7 +42,7 @@ window.onload = function() {
         ledge.scale.setTo(3, 1);
         ledge = walls.create(0, 0, 'wall');
         ledge.body.immovable = true;
-        ledge.scale.setTo(0.1, 100);
+        ledge.scale.setTo(0.08, 100);
         /*ledge = walls.create(50, 50, 'wall');
         ledge.body.immovable = true;
         ledge = walls.create(-130, 250, 'wall');
