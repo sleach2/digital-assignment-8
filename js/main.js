@@ -36,15 +36,15 @@ window.onload = function() {
 
         var ledge = walls.create(0, 0, 'wall');
         ledge.body.immovable = true;
-        ledge.scale.setTo(5, 2); 
-        ledge = walls.create(100, 150, 'wall');
+        ledge.scale.setTo(2, 1); 
+        /*ledge = walls.create(100, 150, 'wall');
         ledge.body.immovable = true;
         ledge = walls.create(50, 50, 'wall');
         ledge.body.immovable = true;
         ledge = walls.create(-130, 250, 'wall');
         ledge.body.immovable = true;
         ledge = walls.create(700, 50, 'wall');
-        ledge.body.immovable = true;
+        ledge.body.immovable = true;*/
 
     }
     
