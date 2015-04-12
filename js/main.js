@@ -21,7 +21,7 @@ window.onload = function() {
         game.physics.startSystem(Phaser.Physics.ARCADE);
         game.add.tileSprite(0,0,2000,2000,'bricks');
 
-        player = game.add.sprite(0, game.world.height-130, 'player');
+        player = game.add.sprite(0, 0, 'player');
         game.physics.arcade.enable(player);
         player.body.collideWorldBounds = true;
 
