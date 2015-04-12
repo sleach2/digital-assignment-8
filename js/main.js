@@ -40,6 +40,9 @@ window.onload = function() {
         ledge = walls.create(0, 970, 'wall');
         ledge.body.immovable = true;
         ledge.scale.setTo(3, 1);
+        ledge = walls.create(0, 0, 'wall');
+        ledge.body.immovable = true;
+        ledge.scale.setTo(0.5, 100);
         /*ledge = walls.create(50, 50, 'wall');
         ledge.body.immovable = true;
         ledge = walls.create(-130, 250, 'wall');
@@ -50,7 +53,7 @@ window.onload = function() {
     }
     
     function update() {
-        //game.physics.arcade.collide(player, walls);
+        game.physics.arcade.collide(player, walls);
         player.body.velocity.x=0;
         player.body.velocity.y=0;
         if(cursors.left.isDown){
