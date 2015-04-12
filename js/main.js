@@ -24,7 +24,7 @@ window.onload = function() {
         game.physics.startSystem(Phaser.Physics.ARCADE);
         game.add.tileSprite(0,0,1000,1000,'bricks');
 
-        player = game.add.sprite(50, 100, 'player');
+        player = game.add.sprite(40, 40, 'player');
         game.physics.arcade.enable(player);
         player.body.collideWorldBounds = true;
 
@@ -37,9 +37,10 @@ window.onload = function() {
         var ledge = walls.create(0, 0, 'wall');
         ledge.body.immovable = true;
         ledge.scale.setTo(3, 1); 
-        /*ledge = walls.create(100, 150, 'wall');
+        ledge = walls.create(1000, 1000, 'wall');
         ledge.body.immovable = true;
-        ledge = walls.create(50, 50, 'wall');
+        ledge.scale.setTo(3, 1);
+        /*ledge = walls.create(50, 50, 'wall');
         ledge.body.immovable = true;
         ledge = walls.create(-130, 250, 'wall');
         ledge.body.immovable = true;
