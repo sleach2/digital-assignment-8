@@ -8,11 +8,13 @@ window.onload = function() {
         game.load.image('bricks', 'assets/bricks.png');
         game.load.audio('bks', 'assets/eerie.mp3');
         game.load.image('player', 'assets/player.png');
+        game.load.image('wall', 'assets/platform.png');
     }
     
     var music;
     var cursors;
     var player;
+    var walls;
 
     function create() {
         music=game.add.audio('bks');
@@ -29,10 +31,22 @@ window.onload = function() {
         cursors = game.input.keyboard.createCursorKeys();
         game.camera.follow(player);
 
+        var ledge = walls.create(0, 0, 'ground');
+        ledge.body.immovable = true;
+        ledge.scale.setTo(20, 2); 
+        ledge = walls.create(100, 150, 'ground');
+        ledge.body.immovable = true;
+        ledge = walls.create(50, 50, 'ground');
+        ledge.body.immovable = true;
+        ledge = walls.create(-130, 250, 'ground');
+        ledge.body.immovable = true;
+        ledge = walls.create(700, 50, 'ground');
+        ledge.body.immovable = true;
+
     }
     
     function update() {
-        //game.physics.arcade.collide(player, platforms);
+        //game.physics.arcade.collide(player, walls);
         player.body.velocity.x=0;
         player.body.velocity.y=0;
         if(cursors.left.isDown){
