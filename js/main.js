@@ -37,7 +37,7 @@ window.onload = function() {
         var ledge = walls.create(0, 0, 'wall');
         ledge.body.immovable = true;
         ledge.scale.setTo(3, 1); 
-        ledge = walls.create(1000, 980, 'wall');
+        ledge = walls.create(0, 980, 'wall');
         ledge.body.immovable = true;
         ledge.scale.setTo(3, 1);
         /*ledge = walls.create(50, 50, 'wall');
