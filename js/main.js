@@ -50,7 +50,7 @@ window.onload = function() {
         wall.body.immovable = true;
         wall.scale.setTo(0.07, 100);
 
-        wall = walls.create(0, 100, 'wall');
+        wall = walls.create(0, 60, 'wall');
         wall.body.immovable = true;
         wall.scale.setTo(1, 1);
 
