@@ -2,7 +2,7 @@ window.onload = function() {
     
     "use strict";
     
-    var game = new Phaser.Game( 400, 300, Phaser.AUTO, 'game', { preload: preload, create: create, update: update } );
+    var game = new Phaser.Game( 2000, 2000, Phaser.AUTO, 'game', { preload: preload, create: create, update: update } );
     
     function preload() {
         game.load.image('bricks', 'assets/bricks.png');
