@@ -12,6 +12,7 @@ window.onload = function() {
     
     var music;
     var cursors;
+    var player;
 
     function create() {
         music=game.add.audio('bks');
