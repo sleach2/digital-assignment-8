@@ -36,10 +36,10 @@ window.onload = function() {
 
         var ledge = walls.create(0, 0, 'wall');
         ledge.body.immovable = true;
-        ledge.scale.setTo(3, 1); 
+        ledge.scale.setTo(3, 0.5); 
         ledge = walls.create(0, 970, 'wall');
         ledge.body.immovable = true;
-        ledge.scale.setTo(3, 1);
+        ledge.scale.setTo(3, 0.5);
         ledge = walls.create(0, 0, 'wall');
         ledge.body.immovable = true;
         ledge.scale.setTo(0.05, 100);
