@@ -2,7 +2,7 @@ window.onload = function() {
     
     "use strict";
     
-    var game = new Phaser.Game( 50, 50, Phaser.AUTO, 'game', { preload: preload, create: create, update: update } );
+    var game = new Phaser.Game( 100, 100, Phaser.AUTO, 'game', { preload: preload, create: create, update: update } );
     
     function preload() {
         game.load.image('bricks', 'assets/bricks.png');
@@ -156,6 +156,6 @@ window.onload = function() {
 
     function end(){
         game.input.disabled=true;
-        game.add.text(player.body.x, player.body.y, 'Game Over', { fontSize: '64px', fill: '#FFFFFF' });
+        game.add.text(player.body.x, player.body.y, 'Game Over', { fontSize: '8px', fill: '#FFFFFF' });
     }
 };
