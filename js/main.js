@@ -9,7 +9,7 @@ window.onload = function() {
         game.load.audio('bks', 'assets/eerie.mp3');
         game.load.image('player', 'assets/player.png');
         game.load.image('wall', 'assets/platform.png');
-        game.load.image('key', 'assets/key.png');
+        game.load.image('key', 'assets/Key.png');
     }
     
     var music;
