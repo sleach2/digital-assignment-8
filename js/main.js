@@ -100,7 +100,7 @@ window.onload = function() {
 
         wall = walls.create(400, 800, 'wall');
         wall.body.immovable = true;
-        wall.scale.setTo(0.25, 1);
+        wall.scale.setTo(0.5, 1);
     }
     
     function update() {
