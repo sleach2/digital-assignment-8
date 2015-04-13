@@ -82,9 +82,13 @@ window.onload = function() {
         wall.body.immovable = true;
         wall.scale.setTo(0.07, 15);
 
-        wall = walls.create(900, 800, 'wall');
+        wall = walls.create(900, 680, 'wall');
         wall.body.immovable = true;
         wall.scale.setTo(0.07, 15);
+
+        wall = walls.create(950, 600, 'wall');
+        wall.body.immovable = true;
+        wall.scale.setTo(1, 1);
 
         wall = walls.create(100, 520, 'wall');
         wall.body.immovable = true;
