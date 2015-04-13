@@ -43,6 +43,9 @@ window.onload = function() {
         key = keys.create(950,900,'key');
         key.body.immovable=true;
 
+        key = keys.create(400,400,'key');
+        key.body.immovable=true;
+
         walls = game.add.group();
         walls.enableBody = true;
 
