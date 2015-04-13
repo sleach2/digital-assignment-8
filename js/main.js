@@ -122,7 +122,7 @@ window.onload = function() {
         wall.body.immovable = true;
         wall.scale.setTo(0.07, 8);
 
-        var key = keys.create(970,950,'key');
+        var key = keys.create(600,300,'key');
         key.body.immovable=true;
     }
     
