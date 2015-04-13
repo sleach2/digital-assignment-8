@@ -9,13 +9,15 @@ window.onload = function() {
         game.load.audio('bks', 'assets/eerie.mp3');
         game.load.image('player', 'assets/player.png');
         game.load.image('wall', 'assets/platform.png');
-        game.load.image('key', 'assets/Key.png');
+        game.load.image('key', 'assets/Key2.png');
     }
     
     var music;
     var cursors;
     var player;
     var walls;
+    var keys;
+    var done;
 
     function create() {
         music=game.add.audio('bks');
@@ -25,14 +27,18 @@ window.onload = function() {
         game.physics.startSystem(Phaser.Physics.ARCADE);
         game.add.tileSprite(0,0,1000,1000,'bricks');
 
-        game.add.sprite(500,500,'key');
-
         player = game.add.sprite(40, 40, 'player');
         game.physics.arcade.enable(player);
         player.body.collideWorldBounds = true;
 
         cursors = game.input.keyboard.createCursorKeys();
         game.camera.follow(player);
+
+        keys = game.add.group();
+        keys.enableBody=true;
+
+        var key = keys.create(900,900,'key');
+        key.body.immovable=true;
 
         walls = game.add.group();
         walls.enableBody = true;
