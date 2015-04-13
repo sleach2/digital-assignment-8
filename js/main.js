@@ -101,6 +101,10 @@ window.onload = function() {
         wall = walls.create(400, 800, 'wall');
         wall.body.immovable = true;
         wall.scale.setTo(0.5, 1);
+
+        wall = walls.create(400, 600, 'wall');
+        wall.body.immovable = true;
+        wall.scale.setTo(0.07, 3);
     }
     
     function update() {
