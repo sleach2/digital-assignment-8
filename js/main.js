@@ -44,11 +44,11 @@ window.onload = function() {
 
         wall = walls.create(0, 0, 'wall');
         wall.body.immovable = true;
-        wall.scale.setTo(0.07, 100);
+        wall.scale.setTo(0.07, 50);
 
         wall = walls.create(970, 0, 'wall');
         wall.body.immovable = true;
-        wall.scale.setTo(0.07, 100);
+        wall.scale.setTo(0.07, 50);
 
         wall = walls.create(0, 60, 'wall');
         wall.body.immovable = true;
@@ -56,7 +56,7 @@ window.onload = function() {
 
         wall = walls.create(500, 0, 'wall');
         wall.body.immovable = true;
-        wall.scale.setTo(0.07, 50);
+        wall.scale.setTo(0.07, 15);
     }
     
     function update() {
