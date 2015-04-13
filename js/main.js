@@ -37,8 +37,7 @@ window.onload = function() {
         keys = game.add.group();
         keys.enableBody=true;
 
-        var key = keys.create(970,950,'key');
-        key.body.immovable=true;
+        
 
         walls = game.add.group();
         walls.enableBody = true;
@@ -122,6 +121,9 @@ window.onload = function() {
         wall = walls.create(500, 550, 'wall');
         wall.body.immovable = true;
         wall.scale.setTo(0.07, 8);
+
+        var key = keys.create(970,950,'key');
+        key.body.immovable=true;
     }
     
     function update() {
