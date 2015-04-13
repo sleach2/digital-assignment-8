@@ -102,9 +102,13 @@ window.onload = function() {
         wall.body.immovable = true;
         wall.scale.setTo(0.5, 1);
 
+        wall = walls.create(400, 900, 'wall');
+        wall.body.immovable = true;
+        wall.scale.setTo(0.5, 1);
+
         wall = walls.create(400, 600, 'wall');
         wall.body.immovable = true;
-        wall.scale.setTo(0.07, 3);
+        wall.scale.setTo(0.07, 7);
     }
     
     function update() {
