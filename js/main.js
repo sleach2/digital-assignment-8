@@ -58,9 +58,9 @@ window.onload = function() {
         wall.body.immovable = true;
         wall.scale.setTo(0.07, 15);
 
-        wall = walls.create(200, 200, 'wall');
+        wall = walls.create(150, 200, 'wall');
         wall.body.immovable = true;
-        wall.scale.setTo(2, 1);
+        wall.scale.setTo(1.5, 1);
     }
     
     function update() {
