@@ -37,7 +37,11 @@ window.onload = function() {
         keys = game.add.group();
         keys.enableBody=true;
 
-        
+        var key = keys.create(900,40,'key');
+        key.body.immovable=true;
+
+        key = keys.create(950,900,'key');
+        key.body.immovable=true;
 
         walls = game.add.group();
         walls.enableBody = true;
@@ -121,16 +125,11 @@ window.onload = function() {
         wall = walls.create(500, 550, 'wall');
         wall.body.immovable = true;
         wall.scale.setTo(0.07, 8);
-
-        var key = keys.create(900,40,'key');
-        key.body.immovable=true;
-
-        key = keys.create(950,950,'key');
-        key.body.immovable=true;
     }
     
     function update() {
         game.physics.arcade.collide(player, walls);
+        game.physics.arcade.overlap(player, keys, kill, null, this);
         player.body.velocity.x=0;
         player.body.velocity.y=0;
         if(cursors.left.isDown){
@@ -142,5 +141,18 @@ window.onload = function() {
         }else if(cursors.down.isDown){
             player.body.velocity.y = 250;
         }
+        if(done==3){
+            end();
+        }
+    }
+
+    function kill(a,b){
+        b.kill();
+        done+=1;
+    }
+
+    function end(){
+        game.input.disabled=true;
+        game.add.text(player.body.x, player.body.y, 'Game Over', { fontSize: '64px', fill: '#FFFFFF' });
     }
 };
