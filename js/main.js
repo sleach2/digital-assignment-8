@@ -9,6 +9,7 @@ window.onload = function() {
         game.load.audio('bks', 'assets/eerie.mp3');
         game.load.image('player', 'assets/player.png');
         game.load.image('wall', 'assets/platform.png');
+        game.load.image('key', 'assets/key.png');
     }
     
     var music;
@@ -23,6 +24,8 @@ window.onload = function() {
         game.world.setBounds(0,0,1000,1000);
         game.physics.startSystem(Phaser.Physics.ARCADE);
         game.add.tileSprite(0,0,1000,1000,'bricks');
+
+        game.add.sprite(500,500,'key');
 
         player = game.add.sprite(40, 40, 'player');
         game.physics.arcade.enable(player);
