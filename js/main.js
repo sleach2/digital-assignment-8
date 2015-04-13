@@ -15,8 +15,8 @@ window.onload = function() {
     var music;
     var cursors;
     var player;
-    var walls;
     var keys;
+    var walls;
     var done;
 
     function create() {
@@ -125,7 +125,7 @@ window.onload = function() {
         var key = keys.create(900,40,'key');
         key.body.immovable=true;
 
-        key = keys.create(950,300,'key');
+        key = keys.create(950,950,'key');
         key.body.immovable=true;
     }
     
